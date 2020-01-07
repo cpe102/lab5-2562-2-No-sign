@@ -2,24 +2,36 @@
 using namespace std;
 
 int main(){
-	int N;
+	int N,i=0,a=0;
 	cout << "Enter the number of student: ";
 	cin >> N;
 	
 	string name[N];
 	int age[N];
-	cout << "Name of student = ";
-	cout << "Age of student = ";
+	while(i<N)
+	{
 	
+	cout << "Name of student = ";
+	cin>>name[i];
+	cout << "Age of student = ";
+	cin>>age[i];
+	i++;
+}
+
 	int key;
 	cout << "--------------------------------------\n";
 	cout << "Enter an age to search: ";
 	cin >> key;
 	cout << "--------------------------------------\n";
-	
+	while(a<N){
+		if(key==age[a]){
+			cout<<name[a]<<endl;
+		}
+		a++;
+	}
 
 	
-	cout << "--------------------------------------\n";
+//	cout << "--------------------------------------\n";
 	
 	return 0;
 }

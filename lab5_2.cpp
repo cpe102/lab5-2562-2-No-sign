@@ -1,17 +1,34 @@
 #include<iostream>
+#include<string>
 using namespace std;
+int i=0;
+string fir,sec;
+	 mixtext(string text1,string text2){	
 
-
-
-
-int main(){	
-	cout << mixText("AAA","BBB") << "\n";
-	cout << mixText("Hello","World") << "\n";
-	cout << mixText("SOTUS","CHEER") << "\n";
-	cout << mixText("1234","5678") << "\n";
-	cout << mixText("6","9") << "\n";
-	cout << mixText("XXXXXXX","YYY") << "\n";	
-	cout << mixText("Y","XX") << "\n";	
+if(text1.size()==text2.size()){
+	while(i<text1.size()){
+		cout<<text1[i]<<text2[i];
+		i++;
+	}
 	
-	return 0;	
 }
+else{cout<<"E";
+}
+}
+	
+	int main(){
+		cout<<"Enter text1:";
+		cin>>fir;
+		cout<<"Enter text2:";
+		cin>>sec;
+		mixtext(fir,sec);
+		
+		
+		return 0;
+		
+	}
+	
+	
+	
+	
+
